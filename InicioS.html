@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Imagenes/fondo2.jpg">
+        <link rel="stylesheet" href="Css/forma.css">
+        <link rel="stylesheet" href="Imagenes/logo.jpg"> 
+        <link rel="stylesheet" href="Css/main.css"> 
+        <link rel="stylesheet" href="Imagenes/Imagen.jpg">     
+        <link rel="stylesheet" href="Imagenes/Imagen2.jpg">
+        <link rel="stylesheet" href="Imagenes/Imagen3.jpg">
+        <link rel="stylesheet" href="Imagenes/Imagen4.jpg">
+        <link rel="stylesheet" href="Css/usuario.css">
+        <title>12 de Febrero Escuela de Futbol</title>
+        <style>
+            body{
+                background-image: url('Imagenes/fondo2.jpg');
+                background-size: cover;
+                background-attachment: fixed;
+                background-repeat: no-repeat;
+            }
+            html{
+                font-size: 62.5%;
+                box-sizing: border-box;
+            }
+            nav{
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                min-height: 8vh;
+                background-color: rgba(255, 255, 255, 0.8);
+                border-radius: 35px;
+            }
+            h1{
+                font-size: 30px;
+                font-weight: 1000;
+                color: rgb(255, 8, 0);
+                text-align: center;
+            }
+            @media (max-width: 600px) {
+            nav {
+                display: none;
+            }
+            main {
+                margin: 0;
+                padding: 10px;
+            }
+            h1 {
+                font-size: 2.5rem;
+            }
+            .letra {
+                font-size: 1.4rem;
+            }
+            figure {
+                flex: 1 1 100%;
+            }
+        }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a href="#">
+                    <img src="Imagenes/logo.jpg" class="logo" alt="">
+                </a>
+                <ul class="enlaces-menu">
+                    <li><a href="Index.html">Inicio</a></li>
+                    <li><a href="QuienesSomos.html">Quienes Somos</a></li>
+                    <li><a href="Ubicacion.html">Ubicacion</a></li>
+                    <li><a href="Usuario.html">Registro</a></li>
+                </ul>
+            </nav>
+        </header>
+        <header class="header">
+            <nav class="navresponsive">
+                <ul class="enlaces-menu">
+                    <li>
+                        <a href="Index.html" target="hola">
+                            <ion-icon name="accessibility-outline" style="font-size: 36px"></ion-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="QuienesSomos.html" target="hola">
+                            <ion-icon name="briefcase" style="font-size: 36px"></ion-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Noticias.html" target="hola">
+                            <ion-icon name="newspaper" style="font-size: 36px"></ion-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Partidos.html" target="hola">
+                            <ion-icon name="football" style="font-size: 36px" ;></ion-icon>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <header class="logo-menu">
+            <div class="menu">
+                <div class="logo">
+                    <img src="Imagenes/logo.jpg" class="logo" alt="">
+                </div>
+                <div class="hamburger" onclick="toggleMenu()">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <div class="nav-links" id="nav-links">
+                    <a href="#ajustes">Ajustes</a>
+                    <a href="Index.html">Volver a inicio</a>
+                </div>
+            </div>
+            
+            <script>
+                function toggleMenu() {
+                    const navLinks = document.getElementById('nav-links');
+                    navLinks.classList.toggle('active');
+                }
+            </script>
+        </header>
+        <main>
+            <form class="Registro-Usuario" id="IngresarU">
+                <h4>Ingresar a cuenta</h4>
+                <input class="control" type="text" name="usuario" placeholder="Ingrese su usuario" required>
+                <input class="control" type="password" name="usuario" placeholder="Ingrese su contraseña" required>
+                <p class="letra">Estoy de acuerdo con los <a href="#">Terminos y Condiciones</a></p>
+                <input class="boton" type="reset" value="Limpiar">
+                <input class="boton" type="submit" value="Ingresar" id="Ingreso">
+                <p><a href="Usuario.html">¿No posee cuenta?. Registrar</a></p>
+            </form>
+            <script>
+              document.getElementById('IngresarU').addEventListener('submit', function(event) {
+                    event.preventDefault();
+                    window.location.href='DentroC.html';
+                })
+            </script>
+        </main>
+        <br><br><br><br><br><br><br><br>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>
