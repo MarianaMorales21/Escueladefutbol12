@@ -24,10 +24,11 @@
                 height: auto;
                 font-size: 20px;
                 background-color: rgb(210, 218, 241);
+            color: black 
             }
             th {
                 background-color: #0011ff;
-                color: white;
+                        color: black 
             }
             .header2 {
                 display: flex;
