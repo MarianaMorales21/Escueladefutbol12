@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Calendario</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="Css/forma.css" rel="stylesheet">
+    <link href="Css/dentro.css" rel="stylesheet">
+    <link href="Css/main.css" rel="stylesheet">
+    <link href="Css/partido.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('Imagenes/fondo2.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            font-family: "Space Grotesk", sans-serif;
+        }
+        
+        html {
+            font-size: 62.5%;
+            box-sizing: border-box;
+            font-family: "Space Grotesk", sans-serif;
+        }
+        
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            min-height: 8vh;
+            background-color: #F2F1EB;
+            border-radius: 5px;
+            font-family: "Space Grotesk", sans-serif;
+        }
+        
+        main {
+            height: auto;
+            background-color: rgba(255, 255, 255, 0.6);
+            margin: 9px;
+            border-radius: 10px;
+            margin-bottom: 80px;
+            padding-bottom: 20px;
+            font-family: "Space Grotesk", sans-serif;
+        }
+        
+        h1 {
+            font-size: 30px;
+            font-weight: 1000;
+            color: rgb(255, 8, 0);
+            text-align: center;
+            font-family: "Space Grotesk", sans-serif;
+        }
+        
+        div {
+            display: flex;
+            font-family: "Space Grotesk", sans-serif;
+        }
+        
+        figure {
+            display: inline-block;
+            text-align: center;
+        }
+        
+        @media (max-width: 600px) {
+            nav {
+                display: none;
+            }
+            main {
+                margin: 0;
+                padding: 10px;
+                font-family: "Space Grotesk", sans-serif;
+            }
+            h1 {
+                font-size: 2.5rem;
+                font-family: "Space Grotesk", sans-serif;
+            }
+            .letra {
+                font-size: 1.4rem;
+                font-family: "Space Grotesk", sans-serif;
+            }
+            figure {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="logo-menu">
+        <div class="menu">
+            <div class="logo">
+                <img src="Imagenes/logo.jpg" class="logo" alt="">
+            </div>
+            <div class="hamburger" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <div class="nav-links" id="nav-links">
+                <a href="#ajustes">Ajustes</a>
+                <a href="#iniciar-sesion">Iniciar sesión</a>
+            </div>
+        </div>
+
+        <script>
+            function toggleMenu() {
+                const navLinks = document.getElementById('nav-links');
+                navLinks.classList.toggle('active');
+            }
+        </script>
+    </header>
+
+    <header class="header">
+        <nav class="navresponsive">
+
+            <ul class="enlaces-menu">
+                <li>
+                    <a href="Index.html" target="hola">
+                        <ion-icon name="accessibility-outline" style="font-size: 26px"></ion-icon>
+                    </a>
+                </li>
+                <li>
+                    <a href="QuienesSomos.html" target="hola">
+                        <ion-icon name="briefcase" style="font-size: 26px"></ion-icon>
+                    </a>
+                </li>
+                <li>
+                    <a href="Noticias.html" target="hola">
+                        <ion-icon name="newspaper" style="font-size: 26px"></ion-icon>
+                    </a>
+                </li>
+                <li>
+                    <a href="Equipos.html" target="hola">
+                        <ion-icon name="football" style="font-size: 26px"></ion-icon>
+                    </a>
+                </li>
+                <li>
+                    <a href="Partidos.html" target="hola">
+                        <ion-icon name="calendar" style="font-size: 26px"></ion-icon>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <header>
+        <nav>
+            <a href="#">
+                <img src="Imagenes/logo.jpg" class="logo" alt="">
+            </a>
+            <ul class="enlaces-menu">
+                <li><a href="Index.html" target="hola">Inicio</a></li>
+                <li><a href="QuienesSomos.html" target="hola">Quienes Somos</a></li>
+                <li><a href="Noticias.html" target="hola">Noticias</a></li>
+                <li><a href="Equipos.html" target="hola">Equipos</a></li>
+                <li><a href="Partidos.html" target="hola">Partidos</a></li>
+                <li><a href="InicioS.html" target="hola">Inicio Sesion</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1 class="espacio">Partidos</h1>
+    <section class="partidos">
+        <div class="cont-partidos">
+            <div class="seccion">
+                <div class="info-equipo">
+                    <h3 class="nombre"> Rayo FC</h3>
+                    <img src="Imagenes/rayofc.jpeg" alt="equipo 1" class="logo-equipo">
+
+                </div>
+
+                <div class="detalle">
+                    <a href="#" class="detalle-partido" onclick="openModal()">2 - 1</a>
+                </div>
+
+                <div class="info-equipo">
+                    <img src="Imagenes/reyesfc.jpeg" alt="equipo 2" class="logo-equipo">
+                    <h3 class="nombre"> Reyes FC</h3>
+                </div>
+            </div>
+        <div class="seccion">
+            <div class="info-equipo">
+                <h3 class="nombre"> Union FC</h3>
+                <img src="Imagenes/unionfc.jpeg" alt="equipo 3" class="logo-equipo">
+
+            </div>
+
+            <div class="detalle">
+
+
+                <a href="#">20:00 <br>10/06/2024</a>
+
+            </div>
+
+            <div class="info-equipo">
+                <img src="Imagenes/olimpofc.jpeg" alt="equipo 4" class="logo-equipo">
+                <h3 class="nombre"> Olimpo FC</h3>
+            </div>
+        </div>
+
+
+
+
+        <div class="seccion">
+            <div class="info-equipo">
+                <h3 class="nombre"> Leones FC</h3>
+                <img src="Imagenes/leonesfc.jpeg" alt="equipo 3" class="logo-equipo">
+
+            </div>
+
+            <div class="detalle">
+
+
+                <a href="#">15:00 <br>09/08/2024</a>
+
+            </div>
+
+            <div class="info-equipo">
+                <img src="Imagenes/aquilesfc.jpeg" alt="equipo 4" class="logo-equipo">
+                <h3 class="nombre"> Aquiles FC</h3>
+            </div>
+        </div>
+
+        <div class="seccion">
+            <div class="info-equipo">
+                <h3 class="nombre"> Rayo FC</h3>
+                <img src="Imagenes/rayofc.jpeg" alt="equipo 3" class="logo-equipo">
+
+            </div>
+
+            <div class="detalle">
+
+
+                <a href="#">19:00 <br>25/08/2024</a>
+
+            </div>
+
+            <div class="info-equipo">
+                <img src="Imagenes/reyesfc.jpeg" alt="equipo 4" class="logo-equipo">
+                <h3 class="nombre"> Reyes FC</h3>
+            </div>
+        </div>
+
+
+
+        <br>
+    </section>
+
+    <div id="modal1" class="modal">
+        <span class="close-button" onclick="closeModal()">&times;</span>
+        <div class="contenedor-stats">
+            <div class="seccion1">
+                <div class="team">
+                    <h2>Rayo FC</h2>
+                    <img src="Imagenes/rayofc.jpeg" alt="">
+                </div>
+                <h2>2 - 1</h2>
+                <div class="team">
+                    <img src="Imagenes/reyesfc.jpeg" alt="">
+                    <h2>Reyes FC</h2>
+                </div>
+
+            </div>
+            <div class="seccion-goles">
+                <div class="goles-equipos">
+                    <p class="izq">Carlos
+                        <ion-icon name="football"></ion-icon>
+                    </p>
+                    <p class="izq">Juanas
+                        <ion-icon name="football"></ion-icon>
+                    </p>
+                </div>
+                <div class="goles-equipos">
+                    <p class="der">Adrian
+                        <ion-icon name="football"></ion-icon>
+                    </p>
+                    <p class="der">Daniel
+                        <ion-icon name="football"></ion-icon>
+                    </p>
+                </div>
+            </div>
+
+            <div class="seccion-estadisticas">
+                <div class="estadisticas1">
+                    <p>40%</p>
+                    <p>Posesion:</p>
+                    <p>60%</p>
+                </div>
+
+                <div class="estadisticas1">
+
+                    <p>12</p>
+                    <p>Tiros a puerta</p>
+                    <p>10</p>
+                </div>
+                <div class="estadisticas1">
+
+                    <p>5</p>
+                    <p>Oportunidades de gol</p>
+                    <p>2</p>
+                </div>
+                <div class="estadisticas1">
+
+                    <p>12</p>
+                    <p>Tiros de esquina</p>
+                    <p>10</p>
+                </div>
+                <div class="estadisticas1">
+
+                    <p>12</p>
+                    <p>Tiros a puerta</p>
+                    <p>10</p>
+                </div>
+
+                <div class="estadisticas1">
+                    <p>6</p>
+                    <p>Fueras de juego</p>
+                    <p>2</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <br><br><br><br><br><br><br><br>
+
+
+    <script>
+        function openModal() {
+            document.getElementById("modal1").style.display = "block";
+        }
+
+        function closeModal() {
+            document.getElementById("modal1").style.display = "none";
+        }
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

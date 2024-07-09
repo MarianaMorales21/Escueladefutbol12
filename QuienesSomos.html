@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Imagenes/fondo2.jpg">
+    <link rel="stylesheet" href="Css/Contenedor.css">
+    <link rel="stylesheet" href="Css/forma.css">
+    <link rel="stylesheet" href="Imagenes/logo.jpg">
+    <link rel="stylesheet" href="Css/main.css">
+    <link rel="stylesheet" href="Imagenes/Imagen.jpg">
+    <link rel="stylesheet" href="Imagenes/Imagen2.jpg">
+    <link rel="stylesheet" href="Imagenes/Imagen3.jpg">
+    <link rel="stylesheet" href="Imagenes/Imagen4.jpg">
+    <link rel="stylesheet" href="Imagenes/1715270212939.jpg">
+    <link rel="stylesheet" href="Imagenes/1715270212947.jpg">
+    <link rel="stylesheet" href="Imagenes/1715270212955.jpg">
+    <link rel="stylesheet" href="Imagenes/1715270212962.jpg">
+    <link rel="stylesheet" href="Imagenes/1715270212970.jpg">
+    <link rel="stylesheet" href="Imagenes/1715270212977.jpg">
+    <link rel="stylesheet" href="Imagenes/1715270212986.jpg">
+    <link rel="stylesheet" href="Imagenes/1715270212994.jpg">
+    <link rel="stylesheet" href="Imagenes/1715270213002.jpg">
+    <link rel="stylesheet" href="Imagenes/1715283692060.jpg">
+    <link rel="stylesheet" href="Imagenes/IMG-20240503-WA0008.jpg">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="icon" href="Imagenes/iconi2.jpg">
+    <title>Sobre nosotros-12 de Febrero Escuela de Futbol</title>
+    <style>
+        body {
+            background-color: gray;
+           background-image: url('Imagenes/fondo2.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+        }
+        
+        html {
+            font-size: 62.5%;
+            box-sizing: border-box;
+        }
+        
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            min-height: 8vh;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 35px;
+            font-family: "Space Grotesk", sans-serif;
+        }
+        
+        main {
+            height: auto;
+            background-color: rgba(255, 255, 255, 0.6);
+            margin: 9px;
+            border-radius: 10px;
+            margin-bottom: 80px;
+            padding-bottom: 20px;
+        }
+        
+        h1 {
+            font-size: 30px;
+            font-weight: 1000;
+            color: rgb(255, 8, 0);
+            text-align: center;
+            font-family: "Space Grotesk", sans-serif;
+        }
+        
+        div {
+            display: flex;
+        }
+        
+        figure {
+            display: inline-block;
+            text-align: center;
+        }
+        @media (max-width: 600px) {
+            nav {
+                display: none;
+            }
+            main {
+                margin: 0;
+                padding: 10px;
+            }
+            h1 {
+                font-size: 2.5rem;
+            }
+            .letra {
+                font-size: 1.4rem;
+            }
+            figure {
+                flex: 1 1 100%;
+            }
+            }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navresponsive">
+
+            <ul class="enlaces-menu">
+                <li>
+                    <a href="Index.html" target="hola">
+                        <ion-icon name="accessibility-outline" style="font-size: 26px"></ion-icon>
+                    </a>
+                </li>
+                <li>
+                    <a href="QuienesSomos.html" target="hola">
+                        <ion-icon name="briefcase" style="font-size: 26px"></ion-icon>
+                    </a>
+                </li>
+                <li>
+                    <a href="Noticias.html" target="hola">
+                        <ion-icon name="newspaper" style="font-size: 26px"></ion-icon>
+                    </a>
+                </li>
+                <li>
+                    <a href="Equipos.html" target="hola">
+                        <ion-icon name="football" style="font-size: 26px"></ion-icon>
+                    </a>
+                </li>
+                <li>
+                    <a href="Partidos.html" target="hola">
+                        <ion-icon name="calendar" style="font-size: 26px"></ion-icon>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <header class="logo-menu">
+        <div class="menu">
+            <div class="logo">
+                <img src="Imagenes/logo.jpg" class="logo" alt="">
+            </div>
+            <div class="hamburger" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <div class="nav-links" id="nav-links">
+                <a href="#ajustes">Ajustes</a>
+                <a href="InicioS.html">Iniciar sesión</a>
+            </div>
+        </div>
+        
+        <script>
+            function toggleMenu() {
+                const navLinks = document.getElementById('nav-links');
+                navLinks.classList.toggle('active');
+            }
+        </script>
+    </header>
+    <header>
+        <nav>
+            <a href="#">
+                <img src="Imagenes/logo.jpg" class="logo" alt="">
+            </a>
+            <ul class="enlaces-menu">
+                <li><a href="Index.html" target="hola">Inicio</a></li>
+                <li><a href="QuienesSomos.html" target="hola">Quienes Somos</a></li>
+                <li><a href="Noticias.html" target="hola">Noticias</a></li>
+                <li><a href="Equipos.html" target="hola">Equipos</a></li>
+                <li><a href="Partidos.html" target="hola">Partidos</a></li>
+                <li><a href="InicioS.html" target="hola">Inicio Sesion</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="caja1">
+        <nav>
+            <ul class="enlaces-menu">
+                <li><a href="#Principal">Principal</a></li>
+                <li><a href="#Categorias">Categorias</a></li>
+                <li><a href="#Subcategorias">Subcategorias</a></li>
+                <li><a href="#Areas">Areas</a></li>
+                <li><a href="#Torneos">Torneos</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main>
+        <h1 id="Principal">Quienes Somos</h1>
+        <div class="caja2">
+            <p class="letra1">
+                La Escuela de Fútbol 12 de Febrero ofrece entrenamientos regulares, participación en torneos locales y regionales, así como la posibilidad de que sus jugadores sean observados por clubes profesionales para continuar su carrera
+                en el fútbol de alto nivel. Además, la escuela cuenta con un equipo de entrenadores capacitados y comprometidos con la enseñanza del deporte
+            </p>
+            <img class="ImgP3" src="Imagenes/1715270212994.jpg" alt="">
+        </div>
+        <h1 id="Categorias">Categorias</h1>
+        <div class="caja2">
+            <img class="ImgP3" src="Imagenes/1715270212939.jpg" class="ImgP2" alt="">
+            <p class="letra">Contamos con aproximadamente siete categorias:
+                <br>1) Chuponcitos(2019-2020)
+                <br>2) Teterito(2017-2018)
+                <br>3) Compotica(2015-2016)
+                <br>4) Mundialito(2013-2014)
+                <br>5) Sub 13(2012)
+                <br>6) Sub 15(2010-2011)
+                <br>7) Sub 17(2008-2009)
+            </p>
+        </div>
+        <h1 id="Subcategorias">Subcategorias</h1>
+        <div class="caja2">
+            <p class="letra1">Cada categoria anteriormente nombrada cuenta con subcategorias ya que debido a la gran demanda se vio la necesidad de desarrollar estas en se dividan a los estudiantes por su tiempo de antigüedad y destreza, siendo como niveles
+                los cuales son divididos en A, B, C, D y E, el alcance de los niveles va a depender de la demanda de estudiantes, en base a esa subcategoría se le asigna el entrenador al atleta ingresado, así mismo esto va a depender de la cantidad
+                de jugadores que posea cada profesor ya que cada uno de ellos no puede tener en su planilla más de 25 atletas inscritos
+            </p>
+            <img class="ImgP3" src="Imagenes/1715270212947.jpg" class="ImgP3" alt="">
+        </div>
+        <h1 class="areas" id="Areas">Areas de entrenemientos/partidos</h1>
+        <div class="caja2">
+            <img class="ImgP3" src="Imagenes/1715283692060.jpg" class="ImgP2" alt="">
+            <p class="letra">
+                La escuela cuenta con aproximadamente 3 canchas propias las cuales son dos de tamaño mediano para futbol 7 y una de futbol 11, así mismo se habla de la existencia de canchas alternativas las cuales se encuentran distribuidas
+                en la zona, esas canchas alternativas son dos de futbol 11 y una de futbol sala.
+                <a href="HorarioE.html">Horarios de entrenemiento disponibles</a>
+            </p>
+        </div>
+        <h1 id="Torneos">Torneos</h1>
+        <div class="caja2">
+            <p class="letra1">
+                La escuela participa en una gran cantidad de torneos tanto nacionales como regionales:
+                <br>1) Torneo Estadal (Todas las categorias)
+                <br>2) Torneo Regional (Todas las categorias)
+                <br>3) Copa Tachira (Todas las categorias)
+                <br>4) Cuadrangulares
+                <br>5) Amistosos
+
+            </p>
+            <img class="ImgP3" src="Imagenes/IMG-20240503-WA0008.jpg" class="ImgP3" alt="">
+        </div>
+        <br><br><br><br><br><br><br><br>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </main>
+</body>

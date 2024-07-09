@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/dentro.css">
+    <link rel="stylesheet" href="Css/main.css">
+    <title>INICIO-EVENTOS-12 de Febrero Escuela de Futbol</title>
+    <link rel="icon" href="Imagenes/iconi2.jpg">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('Imagenes/fondo2.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+        }
+        h1{
+            text-align: center;
+            color: red;
+        }
+        @media screen and (max-width: 600px) {
+
+            .sidebar a {
+                font-size: 16px;
+                padding: 8px 10px;
+            }
+
+            .bloques {
+                width: 100%;
+                margin: 10px 0;
+            }
+
+            .contenedor {
+                margin: 10px;
+            }
+            .open-button1{
+                display: none;
+            }
+            .bloques{
+                height: 300px;
+                border:2px solid black ;
+            }
+        }
+    </style>
+</head>
+<body>
+    <button class="open-button1" onclick="toggleSidebar()">☰</button>
+    <div class="sidebar" id="sidebar" onclick="closeSidebar()">
+    <h1 style="text-align: center; color: red">Home</h1>
+      <a href="Seguimiento.html">Inicio</a>
+      <a href="Pagos.html">Area de Pagos</a>
+      <a href="Eventos.html">Infomacion de eventos</a>
+      <a href="InicioS.html">Salir</a>
+    </div>
+    <script>
+        function toggleSidebar() {
+        var sidebar = document.getElementById('sidebar');
+            if (sidebar.style.width === '180px') {
+              sidebar.style.width = '0';
+            } else {
+              sidebar.style.width = '180px';
+            }
+        }
+        function closeSidebar() {
+            var sidebar = document.getElementById('sidebar');
+            sidebar.style.width = '0';
+        }
+        function mostrarmensaje(){
+            alert("Procesando Pago. Se le notificara a su gmail al completar el proceso");
+            location.reload();
+        }
+    </script>
+    <header class="header">
+        <nav class="navresponsive">
+
+            <ul class="enlaces-menu">
+                <li>
+                    <a href="Seguimiento.html" target="hola">
+                        <ion-icon name="accessibility-outline" style="font-size: 35px"></ion-icon>
+                    </a>
+                </li>
+                <li>
+                    <a href="Eventos.html" target="hola">
+                        <ion-icon name="briefcase" style="font-size: 35px"></ion-icon>
+                    </a>
+                </li>
+                <li>
+                    <a href="Pagos.html" target="hola">
+                        <ion-icon name="newspaper" style="font-size: 35px"></ion-icon>
+                    </a>
+                </li>
+                <li>
+            </ul>
+        </nav>
+    </header>
+    <header class="logo-menu">
+        <div class="menu">
+            <div class="logo">
+                <img src="Imagenes/logo.jpg" class="logo" alt="">
+            </div>
+            <div class="hamburger" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <div class="nav-links" id="nav-links">
+                <a href="#ajustes">Ajustes</a>
+                <a href="InicioS.html">Salir</a>
+            </div>
+        </div>
+        
+        <script>
+            function toggleMenu() {
+                const navLinks = document.getElementById('nav-links');
+                navLinks.classList.toggle('active');
+            }
+
+        </script>
+    </header> 
+    <div class="contenedor">
+        <h1 style="text-align: center;">Eventos Disponibles</h1>
+        <div style="display: flex; flex-wrap: wrap; justify-content: center;">
+            <div class="bloques">
+                <header style="padding-top: 8px;">Recaudación</header>
+                <div>
+                    <p style="padding: 5px;">
+                        Por realizar el 20 de Junio del 2024
+                        Evento a realizarse 
+                        para el atleta Marcos Jiménez quien sufrió una lesión 
+                        el día Jueves en el torneo Estadal.
+                    </p>
+                    <button class="boton" onclick="mostrarmensaje()">Confirmar asistencia</button>
+                </div>
+            </div>
+            <div class="bloques">
+                <header style="padding-top: 8px;">Copa América</header>
+                <div>
+                    <p style="padding: 5px;">
+                        Se realizará el día 15 de Junio del 2024
+                        con la finalidad de que las diversas subcategorías 
+                        conformen distintos equipos. Dicho torneo tendrá
+                        trofeo para 1er, 2do y 3er lugar.
+                    </p>
+                    <button class="boton" onclick="mostrarmensaje()">Confirmar asistencia</button>
+                </div>
+            </div>
+        </div>
+        <div style="display: flex; flex-wrap: wrap; justify-content: center;">
+            <div class="bloques">
+                <header style="padding-top: 8px;">Estadal</header>
+                <div>
+                    <p style="padding: 5px;">
+                        Torneo a realizarse el 30 de Junio, finales de sub 13
+                        y sub 15. 
+                    </p>
+                    <button class="boton" onclick="mostrarmensaje()">Confirmar asistencia</button>
+                </div>
+            </div>
+            <div class="bloques">
+                <header style="padding-top: 8px;">Copa Diamante</header>
+                <div>
+                    <p style="padding: 5px;">
+                        Se dará inicio a la Copa Diamante 
+                        el día 16 de Junio en las instalaciones 
+                        de la escuela.
+                    </p>
+                    <button class="boton" onclick="mostrarmensaje()">Confirmar asistencia</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleSidebar() {
+            var sidebar = document.getElementById('sidebar');
+            if (sidebar.style.width === '180px') {
+                sidebar.style.width = '0';
+            } else {
+                sidebar.style.width = '180px';
+            }
+        }
+
+        function closeSidebar() {
+            var sidebar = document.getElementById('sidebar');
+            sidebar.style.width = '0';
+        }
+
+        function mostrarmensaje() {
+            alert("Confirmación de asistencia exitosa");
+            location.reload();
+        }
+    </script>
+</body>
+<br><br><br><br><br><br><br><br>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</html>

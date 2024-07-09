@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Imagenes/fondo2.jpg">
+        <link rel="stylesheet" href="Css/forma.css">
+        <link rel="stylesheet" href="Imagenes/logo.jpg"> 
+        <link rel="stylesheet" href="Css/main.css"> 
+        <link rel="stylesheet" href="Imagenes/Imagen.jpg">     
+        <link rel="stylesheet" href="Imagenes/Imagen2.jpg">
+        <link rel="stylesheet" href="Imagenes/Imagen3.jpg">
+        <link rel="stylesheet" href="Imagenes/Imagen4.jpg">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="Css/usuario.css">
+        <link rel="icon" href="Imagenes/iconi2.jpg">
+        <title>Inicio Sesion-12 de Febrero Escuela de Futbol</title>
+        <style>
+            body{
+                background-image: url('Imagenes/fondo2.jpg');
+                background-size: cover;
+                background-attachment: fixed;
+                background-repeat: no-repeat;
+            }
+            html{
+                font-size: 62.5%;
+                box-sizing: border-box;
+            }
+            nav{
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                min-height: 8vh;
+                background-color: rgba(255, 255, 255, 0.8);
+                border-radius: 35px;
+                font-family: "Space Grotesk", sans-serif;
+                margin-top: 10px;
+            }
+            h1{
+                font-size: 30px;
+                font-weight: 1000;
+                color: rgb(255, 8, 0);
+                text-align: center;
+                font-family: "Space Grotesk", sans-serif;
+            }
+            @media (max-width: 600px) {
+            nav {
+                display: none;
+            }
+            main {
+                margin: 0;
+                padding: 10px;
+                font-family: "Space Grotesk", sans-serif;
+            }
+            h1 {
+                font-size: 2.5rem;
+                font-family: "Space Grotesk", sans-serif;
+            }
+            .letra {
+                font-size: 1.4rem;
+                font-family: "Space Grotesk", sans-serif;
+            }
+            figure {
+                flex: 1 1 100%;
+            }
+        }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a href="#">
+                    <img src="Imagenes/logo.jpg" class="logo" alt="">
+                </a>
+                <ul class="enlaces-menu">
+                    <li><a href="Index.html" target="hola">Inicio</a></li>
+                    <li><a href="QuienesSomos.html" target="hola">Quienes Somos</a></li>
+                    <li><a href="Noticias.html" target="hola">Noticias</a></li>
+                    <li><a href="Equipos.html" target="hola">Equipos</a></li>
+                    <li><a href="Partidos.html" target="hola">Partidos</a></li>
+                    <li><a href="InicioS.html" target="hola">Inicio Sesion</a></li>
+                </ul>
+            </nav>
+        </header>
+    
+        <header class="header">
+            <nav class="navresponsive">
+    
+                <ul class="enlaces-menu">
+                    <li>
+                        <a href="Index.html" target="hola">
+                            <ion-icon name="accessibility-outline" style="font-size: 26px"></ion-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="QuienesSomos.html" target="hola">
+                            <ion-icon name="briefcase" style="font-size: 26px"></ion-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Noticias.html" target="hola">
+                            <ion-icon name="newspaper" style="font-size: 26px"></ion-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Equipos.html" target="hola">
+                            <ion-icon name="football" style="font-size: 26px"></ion-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Partidos.html" target="hola">
+                            <ion-icon name="calendar" style="font-size: 26px"></ion-icon>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <header class="logo-menu">
+            <div class="menu">
+                <div class="logo">
+                    <img src="Imagenes/logo.jpg" class="logo" alt="">
+                </div>
+                <div class="hamburger" onclick="toggleMenu()">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <div class="nav-links" id="nav-links">
+                    <a href="#ajustes">Ajustes</a>
+                    <a href="Index.html">Volver a inicio</a>
+                </div>
+            </div>
+            
+            <script>
+                function toggleMenu() {
+                    const navLinks = document.getElementById('nav-links');
+                    navLinks.classList.toggle('active');
+                }
+            </script>
+        </header>
+        <main>
+            <form class="Registro-Usuario" id="IngresarU">
+                <h4>Ingresar a cuenta</h4>
+                <input class="control" type="text" name="usuario" placeholder="Ingrese su usuario" required>
+                <input class="control" type="password" name="usuario" placeholder="Ingrese su contraseña" required>
+                <p class="letra">Estoy de acuerdo con los <a href="#">Terminos y Condiciones</a></p>
+                <input class="boton" type="reset" value="Limpiar">
+                <input class="boton" type="submit" value="Ingresar" id="Ingreso">
+                <p><a href="Usuario.html">¿No posee cuenta?. Registrar</a></p>
+            </form>
+            <script>
+              document.getElementById('IngresarU').addEventListener('submit', function(event) {
+                    event.preventDefault();
+                    window.location.href='Seguimiento.html';
+                })
+            </script>
+        </main>
+        <br><br><br><br><br><br><br><br>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>

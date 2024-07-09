@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Plantilla Rayo Fc-12 de Febrero Escuela de Futbol</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="Css/dentro.css" rel="stylesheet">
+    <link href="Css/Equipos.css" rel="stylesheet">
+    <link href="Css/forma.css" rel="stylesheet">
+    <link href="Css/main.css" rel="stylesheet">
+    <link href="Css/plantillas.css" rel="stylesheet">
+    <link rel="icon" href="Imagenes/iconi2.jpg">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('Imagenes/fondo2.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+        }
+        
+        html {
+            font-size: 62.5%;
+            box-sizing: border-box;
+            font-family: "Space Grotesk", sans-serif;
+        }
+        
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            min-height: 8vh;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 35px;
+        }
+        
+        .tooltip {
+            visibility: hidden;
+            width: 100px;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 0;
+            position: absolute;
+            z-index: 1;
+            bottom: 100%; 
+            left: 50%;
+            margin-left: -50px;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        .tooltip::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: black transparent transparent transparent;
+        }
+
+        .number:hover .tooltip {
+            visibility: visible;
+            opacity: 1;
+        }
+        @media (max-width: 600px) {
+            nav {
+                display: none;
+            }
+            main {
+                margin: 0;
+                padding: 10px;
+            }
+            h1 {
+                font-size: 2.5rem;
+            }
+            .letra {
+                font-size: 1.4rem;
+            }
+            figure {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <nav class="navresponsive">
+
+            <ul class="enlaces-menu">
+                <li>
+                    <a href="Index.html" target="hola">
+                        <ion-icon name="accessibility-outline" style="font-size: 26px"></ion-icon>
+                    </a>
+                </li>
+                <li>
+                    <a href="QuienesSomos.html" target="hola">
+                        <ion-icon name="briefcase" style="font-size: 26px"></ion-icon>
+                    </a>
+                </li>
+                <li>
+                    <a href="Noticias.html" target="hola">
+                        <ion-icon name="newspaper" style="font-size: 26px"></ion-icon>
+                    </a>
+                </li>
+                <li>
+                    <a href="Equipos.html" target="hola">
+                        <ion-icon name="football" style="font-size: 26px"></ion-icon>
+                    </a>
+                </li>
+                <li>
+                    <a href="Partidos.html" target="hola">
+                        <ion-icon name="calendar" style="font-size: 26px"></ion-icon>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <header class="logo-menu">
+        <div class="menu">
+            <div class="logo">
+                <img src="Imagenes/logo.jpg" class="logo" alt="">
+            </div>
+            <div class="hamburger" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <div class="nav-links" id="nav-links">
+                <a href="#ajustes">Ajustes</a>
+                <a href="InicioS.html">Iniciar sesión</a>
+            </div>
+        </div>
+        
+        <script>
+            function toggleMenu() {
+                const navLinks = document.getElementById('nav-links');
+                navLinks.classList.toggle('active');
+            }
+        </script>
+    </header>
+    <header>
+        <nav>
+            <a href="#">
+                <img src="Imagenes/logo.jpg" class="logo" alt="">
+            </a>
+            <ul class="enlaces-menu">
+                <li><a href="Index.html" target="hola">Inicio</a></li>
+                <li><a href="QuienesSomos.html" target="hola">Quienes Somos</a></li>
+                <li><a href="Noticias.html" target="hola">Noticias</a></li>
+                <li><a href="Equipos.html" target="hola">Equipos</a></li>
+                <li><a href="Partidos.html" target="hola">Partidos</a></li>
+                <li><a href="InicioS.html" target="hola">Inicio Sesion</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="header2">
+        <img src="Imagenes/rayofc.jpeg" alt="">
+        <h1   style="font-family: Space Grotesk, sans-serif;">Rayo Fc
+        <br>DT:Alex Romo</h1>
+    </div>
+    <div class="contenedor2">
+        
+        <div class="derecha">
+            <div class="soccer-field">
+                <div class="field-outline">
+                    <div class="center-circle"> </div>
+                    <div class="penalty-area">
+                    </div>
+                    <div class="penalty-area2">
+                        <div class="goal-area2"></div>
+                    </div>
+                    <div class="halfway-line"> </div>
+                    <div class="player">
+                        <div class="number number1">1
+                            <div class="tooltip">Juan Perez</div>
+                        </div>
+                        <div class="number number2">2
+                            <div class="tooltip">Diego Perez</div>
+                        </div>
+                        <div class="number number3">3
+                            <div class="tooltip">Luis Lopez</div>
+                        </div>
+                        <div class="number number4">4
+                            <div class="tooltip">Pedro Gomez</div>
+                        </div>
+                        <div class="number number5">5
+                            <div class="tooltip">Jose Lopez</div>
+                        </div>
+                        <div class="number number6">6
+                            <div class="tooltip">Alberto Ruiz</div>
+                        </div>
+                        <div class="number number7">7
+                            <div class="tooltip">Leandro Mora</div>
+                        </div>
+                        <div class="number number8">8
+                            <div class="tooltip">Jean Moreno</div>
+                        </div>
+                        <div class="number number9">9
+                            <div class="tooltip">Julian Mendez</div>
+                        </div>
+                        <div class="number number10">10
+                            <div class="tooltip">Esteban Castillo</div>
+                        </div>
+                        <div class="number number11">11
+                            <div class="tooltip">Marcos Lopez</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Posición</th>
+                        <th>Nombre</th>
+                        <th>Categoría</th>
+                        <th>Sub-C</th>
+                    </tr>
+                </thead>
+                <tbody>   
+                    <tr>
+                        <td>Portero</td>
+                        <td>Divid Zambrano</td>
+                        <td>Sub-13</td>
+                        <td>B</td>
+                    </tr>
+                    <tr>
+                        <td>Defensa</td>
+                        <td>Pedro Gómez</td>
+                        <td>Sub-13</td>
+                        <td>B</td>
+                    </tr>
+                    <tr>
+                        <td>Medio</td>
+                        <td>Andres Cardenas</td>
+                        <td>Sub-13</td>
+                        <td>C</td>
+                    </tr>
+                    <tr>
+                        <td>Delantero</td>
+                        <td>Leandro Ramirez</td>
+                        <td>Sub-13</td>
+                        <td>A</td>
+                    </tr>
+                    <tr>
+                        <td>Defensa</td>
+                        <td>Nicolas Andrade</td>
+                        <td>Sub-13</td>
+                        <td>A</td>
+                    </tr>
+                    <tr>
+                        <td>lateral Izquierdo</td>
+                        <td>Marcos López</td>
+                        <td>Sub-13</td>
+                        <td>B</td>
+                    </tr>
+                    <tr>
+                        <td>Delantero</td>
+                        <td>Luis Morantes</td>
+                        <td>Sub-13</td>
+                        <td>A</td>
+                    </tr>
+                    <tr>
+                        <td>Medio</td>
+                        <td>Alberto Ruiz</td>
+                        <td>Sub-13</td>
+                        <td>C</td>
+                    </tr>
+                    <tr>
+                        <td>Lateral Derecho</td>
+                        <td>Juan Pérez</td>
+                        <td>Sub-13</td>
+                        <td>A</td>
+                    </tr>
+                    <tr>
+                        <td>Defensa</td>
+                        <td>Jose Morantes</td>
+                        <td>Sub-13</td>
+                        <td>A</td>
+                    </tr>
+                    <tr>
+                        <td>Portero</td>
+                        <td>Juan Pérez</td>
+                        <td>Sub-13</td>
+                        <td>A</td>
+                    </tr>
+                    <tr>
+                        <td>Defensa</td>
+                        <td>Divid Zambrano</td>
+                        <td>Sub-13</td>
+                        <td>B</td>
+                    </tr>
+                    <tr>
+                        <td>Defensa</td>
+                        <td>Pedro Gómez</td>
+                        <td>Sub-13</td>
+                        <td>B</td>
+                    </tr>
+                    <tr>
+                        <td>Medio</td>
+                        <td>Camilo Lopez</td>
+                        <td>Sub-13</td>
+                        <td>C</td>
+                    </tr>
+                </tbody>
+                </table>
+        </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/dentro.css">
+    <link rel="stylesheet" href="Css/main.css">
+    <title>12 de Febrero Escuela de Futbol</title>
+    <link rel="icon" href="Imagenes/iconi2.jpg">
+    <title>INICIO-PAGO-12 de Febrero Escuela de Futbol</title>
+    <link rel="icon" href="Imagenes/iconi2.jpg">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('Imagenes/fondo2.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+        }
+        h1{
+            text-align: center;
+            color: red;
+        }
+        @media screen and (max-width: 600px) {
+            .bloquesP {
+                margin: 10px;
+                padding: 15px;
+            }
+
+            .bloquesP h2 {
+                font-size: 20px;
+            }
+
+            .bloquesP h3 {
+                font-size: 16px;
+            }
+
+            .bloquesP li {
+                font-size: 14px;
+            }
+        }
+        @media (max-width: 600px) {
+            nav {
+                display: none;
+            }
+            main {
+                margin: 0;
+                padding: 10px;
+            }
+            h1 {
+                font-size: 2.5rem;
+            }
+            .letra {
+                font-size: 1.4rem;
+            }
+            figure {
+                flex: 1 1 100%;
+            }
+            .open-button1{
+                display: none;
+            }
+            }
+
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <button class="open-button1" onclick="toggleSidebar()">☰</button>
+    <div class="sidebar" id="sidebar" onclick="closeSidebar()">
+    <h1 style="text-align: center; color: red">Home</h1>
+      <a href="Seguimiento.html">Inicio</a>
+      <a href="Pagos.html">Area de Pagos</a>
+      <a href="Eventos.html">Infomacion de eventos</a>
+      <a href="InicioS.html">Salir</a>
+    </div>
+    <script>
+        function toggleSidebar() {
+        var sidebar = document.getElementById('sidebar');
+            if (sidebar.style.width === '180px') {
+              sidebar.style.width = '0';
+            } else {
+              sidebar.style.width = '180px';
+            }
+        }
+        function closeSidebar() {
+            var sidebar = document.getElementById('sidebar');
+            sidebar.style.width = '0';
+        }
+        function mostrarmensaje(){
+            alert("Procesando Pago. Se le notificara a su gmail al completar el proceso");
+            location.reload();
+        }
+    </script>
+    <header class="header">
+        <nav class="navresponsive">
+
+            <ul class="enlaces-menu">
+                <li>
+                    <a href="Seguimiento.html" target="hola">
+                        <ion-icon name="accessibility-outline" style="font-size: 35px"></ion-icon>
+                    </a>
+                </li>
+                <li>
+                    <a href="Eventos.html" target="hola">
+                        <ion-icon name="briefcase" style="font-size: 35px"></ion-icon>
+                    </a>
+                </li>
+                <li>
+                    <a href="Pagos.html" target="hola">
+                        <ion-icon name="newspaper" style="font-size: 35px"></ion-icon>
+                    </a>
+                </li>
+                <li>
+            </ul>
+        </nav>
+    </header>
+    <header class="logo-menu">
+        <div class="menu">
+            <div class="logo">
+                <img src="Imagenes/logo.jpg" class="logo" alt="">
+            </div>
+            <div class="hamburger" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <div class="nav-links" id="nav-links">
+                <a href="#ajustes">Ajustes</a>
+                <a href="InicioS.html">Salir</a>
+            </div>
+        </div>
+        
+        <script>
+            function toggleMenu() {
+                const navLinks = document.getElementById('nav-links');
+                navLinks.classList.toggle('active');
+            }
+
+        </script>
+    </header> 
+    <div class="contenedor">
+        <h1>Cancelacion de Mensualidades y Extras</h1>
+        <div style="display: flex; justify-content: center;">
+            <div class="bloquesP">
+                <h2>Pagos Pendientes</h2>
+                <div>
+                    <h3>Pago Mensualidad</h3>
+                    <ul>
+                        <li>Deuda Mes Mayo: 45$</li>
+                        <li>Deuda Mes Junio: 45$</li>
+                    </ul>
+                    <h3>Pagos Extras</h3>
+                    <ul>
+                        <li>Colaboracion para material: 3$</li>
+                        <li>Colaboracion daño de pared: 4$</li>
+                        <li>Colaboracion fiesta de vacaciones: 2$</li>
+                        <li>Colaboracion para material: 6$</li>
+                        <li>Colaboracion daño de pared: 4$</li>
+                        <li>Colaboracion fiesta de Vinotinto: 2$</li>
+                    </ul>
+                    <button class="boton" onclick="location.href='RealizarPagos.html'">Realizar pago</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<br><br><br><br><br><br><br><br>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</html>

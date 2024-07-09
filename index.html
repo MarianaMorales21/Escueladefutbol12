@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Imagenes/fondo2.jpg">
+    <link rel="stylesheet" href="Css/Contenedor.css">
+    <link rel="stylesheet" href="Css/forma.css">
+    <link rel="stylesheet" href="Imagenes/logo.jpg">
+    <link rel="stylesheet" href="Css/main.css">
+    <link rel="stylesheet" href="Imagenes/Imagen.jpg">
+    <link rel="stylesheet" href="Imagenes/Imagen2.jpg">
+    <link rel="stylesheet" href="Imagenes/Imagen3.jpg">
+    <link rel="stylesheet" href="Imagenes/Imagen4.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Css/dentro.css">
+    <link rel="icon" href="Imagenes/iconi2.jpg">
+    <title>12 de Febrero Escuela de Futbol</title>
+    <style>
+        body {
+            background-color: gray;
+           background-image: url('Imagenes/fondo2.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+        }
+        
+        html {
+            font-size: 62.5%;
+            box-sizing: border-box;
+        }
+        
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            min-height: 8vh;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 35px;
+            font-family: "Space Grotesk", sans-serif;
+        }
+        
+        main {
+            height: auto;
+            background-color: rgba(255, 255, 255, 0.6);
+            margin: 9px;
+            border-radius: 10px;
+            margin-bottom: 80px;
+            padding-bottom: 20px;
+        }
+        
+        h1 {
+            font-size: 30px;
+            font-weight: 1000;
+            color: rgb(255, 8, 0);
+            text-align: center;
+            font-family: "Space Grotesk", sans-serif;
+        }
+        
+        div {
+            display: flex;
+        }
+        
+        figure {
+            display: inline-block;
+            text-align: center;
+        }
+        @media (max-width: 600px) {
+            nav {
+                display: none;
+            }
+            main {
+                margin: 0;
+                padding: 10px;
+            }
+            h1 {
+                font-size: 2.5rem;
+            }
+            .letra {
+                font-size: 1.4rem;
+            }
+            figure {
+                flex: 1 1 100%;
+            }
+            }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navresponsive">
+
+            <ul class="enlaces-menu">
+                <li>
+                    <a href="Index.html" target="hola">
+                        <ion-icon name="accessibility-outline" style="font-size: 26px"></ion-icon>
+                    </a>
+                </li>
+                <li>
+                    <a href="QuienesSomos.html" target="hola">
+                        <ion-icon name="briefcase" style="font-size: 26px"></ion-icon>
+                    </a>
+                </li>
+                <li>
+                    <a href="Noticias.html" target="hola">
+                        <ion-icon name="newspaper" style="font-size: 26px"></ion-icon>
+                    </a>
+                </li>
+                <li>
+                    <a href="Equipos.html" target="hola">
+                        <ion-icon name="football" style="font-size: 26px"></ion-icon>
+                    </a>
+                </li>
+                <li>
+                    <a href="Partidos.html" target="hola">
+                        <ion-icon name="calendar" style="font-size: 26px"></ion-icon>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <header class="logo-menu">
+        <div class="menu">
+            <div class="logo">
+                <img src="Imagenes/logo.jpg" class="logo" alt="">
+            </div>
+            <div class="hamburger" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <div class="nav-links" id="nav-links">
+                <a href="#ajustes">Ajustes</a>
+                <a href="InicioS.html">Iniciar sesión</a>
+            </div>
+        </div>
+        
+        <script>
+            function toggleMenu() {
+                const navLinks = document.getElementById('nav-links');
+                navLinks.classList.toggle('active');
+            }
+        </script>
+    </header>
+    <header>
+        <nav>
+            <a href="#">
+                <img src="Imagenes/logo.jpg" class="logo" alt="">
+            </a>
+            <ul class="enlaces-menu">
+                <li><a href="Index.html" target="hola">Inicio</a></li>
+                <li><a href="QuienesSomos.html" target="hola">Quienes Somos</a></li>
+                <li><a href="Noticias.html" target="hola">Noticias</a></li>
+                <li><a href="Equipos.html" target="hola">Equipos</a></li>
+                <li><a href="Partidos.html" target="hola">Partidos</a></li>
+                <li><a href="InicioS.html" target="hola">Inicio Sesion</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1 style="padding: 10px;">Escuela de Futbol 12 de Febrero</h1>
+        <div class="contenido-responsivo">
+            <img src="Imagenes/equipo.png" class="Img" alt="">
+            <p class="letra">
+                La Escuela de Fútbol 12 de Febrero de Tariba fue fundada en el año 2006. Desde entonces, ha venido desarrollando su labor en la formación de jóvenes futbolistas en la ciudad de Tariba, estado Táchira, Venezuela. La institución ha logrado consolidarse
+                como un referente en la formación deportiva en la región, brindando oportunidades de crecimiento y desarrollo a los jugadores que forman parte de ella. La Escuela de Fútbol 12 de Febrero ofrece entrenamientos regulares, participación en
+                torneos locales y regionales, así como la posibilidad de que sus jugadores sean observados por clubes profesionales para continuar su carrera en el fútbol de alto nivel. Además, la escuela cuenta con un equipo de entrenadores capacitados
+                y comprometidos con la enseñanza del deporte.
+            </p>
+        </div>
+        <h1>Galeria</h1>
+            <div class="galeria">
+                <figure>
+                    <img src="Imagenes/Imagen.jpg" class="Img2" alt="">
+                    <figcaption>
+                        <h2>Campeones Estadal 2023 Mundialito</h2>
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="Imagenes/Imagen2.jpg" class="Img2" alt="">
+                    <figcaption>
+                        <h2>Campeones Copa Tachira 2024 Teterito</h2>
+                    </figcaption>
+                </figure>
+            </div>
+        <div class="galeria">
+            <figure>
+                <img src="Imagenes/Imagen3.jpg" class="Img2" alt="">
+                <figcaption>
+                    <h2>Entrenadores de las diferentes subcategorias</h2>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="Imagenes/Imagen4.jpg" class="Img2" alt="">
+                <figcaption>
+                    <h2>Subcampeones Copa Tachira 2024 Compotica</h2>
+                </figcaption>
+            </figure>
+    </div>
+    </main>
+    <br><br><br><br><br><br><br><br>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

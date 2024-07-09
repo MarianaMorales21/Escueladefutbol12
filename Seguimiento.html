@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/dentro.css">
+    <link rel="stylesheet" href="Css/main.css">
+    <title>INICIO-12 de Febrero Escuela de Futbol</title>
+    <link rel="icon" href="Imagenes/iconi2.jpg">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('Imagenes/fondo2.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+        }
+        @media screen and (max-width: 600px) {
+            .open-button {
+                display: none;
+            }
+            .sidebar a {
+                font-size: 16px;
+                padding: 8px 10px;
+            }
+        }
+        @media (max-width: 600px) {
+            nav {
+                display: none;
+            }
+            main {
+                margin: 0;
+                padding: 10px;
+            }
+            h1 {
+                font-size: 2.5rem;
+            }
+            .letra {
+                font-size: 1.4rem;
+            }
+            figure {
+                flex: 1 1 100%;
+            }
+            }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    
+    <button class="open-button1" onclick="toggleSidebar()">☰</button>
+    <div class="sidebar" id="sidebar" onclick="closeSidebar()">
+    <h1 style="text-align: center; color: red">Home</h1>
+      <a href="Seguimiento.html">Inicio</a>
+      <a href="Pagos.html">Area de Pagos</a>
+      <a href="Eventos.html">Infomacion de eventos</a>
+      <a href="InicioS.html">Salir</a>
+    </div>
+    <header class="header">
+        <nav class="navresponsive">
+
+            <ul class="enlaces-menu">
+                <li>
+                    <a href="Seguimiento.html" target="hola">
+                        <ion-icon name="accessibility-outline" style="font-size: 35px"></ion-icon>
+                    </a>
+                </li>
+                <li>
+                    <a href="Eventos.html" target="hola">
+                        <ion-icon name="briefcase" style="font-size: 35px"></ion-icon>
+                    </a>
+                </li>
+                <li>
+                    <a href="pagos.html" target="hola">
+                        <ion-icon name="newspaper" style="font-size: 35px"></ion-icon>
+                    </a>
+                </li>
+        </nav>
+    </header>
+    <header class="logo-menu">
+        <div class="menu">
+            <div class="logo">
+                <img src="Imagenes/logo.jpg" class="logo" alt="">
+            </div>
+            <div class="hamburger" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <div class="nav-links" id="nav-links">
+                <a href="#ajustes">Ajustes</a>
+                <a href="InicioS.html">Salir</a>
+            </div>
+        </div>
+        
+        <script>
+            function toggleMenu() {
+                const navLinks = document.getElementById('nav-links');
+                navLinks.classList.toggle('active');
+            }
+
+        </script>
+    </header>
+    <h1  style="text-align: center; color: red;">Bienvenido Sr Representante</h1>
+    <div class="contenedor2">
+        <h1 style="text-align: center;">Rendimiento sus atletas</h1>
+        <h2>1) Jose Moreno. CI: 30781815</h2>
+        <canvas id="myChart1"></canvas>
+        <h2>2) Luis Mercado. Cod.Juga: 10111251</h2>
+        <canvas id="myChart2"></canvas>
+    </div>
+
+    <script>
+        function toggleSidebar() {
+            var sidebar = document.getElementById('sidebar');
+            if (sidebar.style.width === '180px') {
+                sidebar.style.width = '0';
+            } else {
+                sidebar.style.width = '180px';
+            }
+        }
+        function closeSidebar() {
+                var sidebar = document.getElementById('sidebar');
+                sidebar.style.width = '0';
+            }
+        function generarGrafico(id, labels, data, titulo, colores) {
+            var ctx = document.getElementById(id).getContext('2d');
+            var myChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        label: titulo,
+                        backgroundColor: colores,
+                        data: data
+                    }]
+                },
+                options: {
+                    scales: {
+                        yAxes: [{
+                            ticks: {
+                                beginAtZero: true
+                            }
+                        }]
+                    }
+                }
+            });
+        }
+
+        var labels1 = ['2020', '2021', '2022', '2023', '2024'];
+        var data1 = [12, 19, 3, 5, 15];
+        var titulo1 = 'Rendimiento por año. Ponderación máxima 20';
+        var colores1 = ['red', 'blue', 'green', 'yellow', 'purple'];
+
+        var labels2 = ['2020', '2021', '2022', '2023', '2024'];
+        var data2 = [8, 15, 10, 9, 18];
+        var titulo2 = 'Rendimiento por año. Ponderación máxima 20';
+        var colores2 = ['red', 'blue', 'green', 'yellow', 'purple'];
+
+        generarGrafico('myChart1', labels1, data1, titulo1, colores1);
+        generarGrafico('myChart2', labels2, data2, titulo2, colores2);
+    </script>
+</body>
+<br><br><br><br><br><br><br><br>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</html>

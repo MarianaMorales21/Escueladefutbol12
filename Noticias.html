@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Imagenes/fondo2.jpg">
+    <link rel="stylesheet" href="Css/Contenedor.css">
+    <link rel="stylesheet" href="Css/forma.css">
+    <link rel="stylesheet" href="Imagenes/logo.jpg"> 
+    <link rel="stylesheet" href="Css/main.css"> 
+    <link rel="stylesheet" href="Css/NoticiasN.css">
+    <link rel="icon" href="Imagenes/iconi2.jpg">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <title>Noticias-12 de Febrero Escuela de Futbol</title>
+    <style>
+        body{
+            background-image: url('Imagenes/fondo2.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+        }
+        html{
+            font-size: 62.5%;
+            box-sizing: border-box;
+        }
+        nav{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            min-height: 8vh;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 35px;
+            font-family: Space Grotesk,sans-serif;
+        }
+        @media (max-width: 600px) {
+            nav {
+                display: none;
+            }
+            main {
+                margin: 0;
+                padding: 10px;
+            }
+            h1 {
+                font-size: 2.5rem;
+            }
+            .letra {
+                font-size: 1.4rem;
+            }
+            figure {
+                flex: 1 1 100%;
+            }
+            }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="navresponsive">
+
+            <ul class="enlaces-menu">
+                <li>
+                    <a href="Index.html" target="hola">
+                        <ion-icon name="accessibility-outline" style="font-size: 26px"></ion-icon>
+                    </a>
+                </li>
+                <li>
+                    <a href="QuienesSomos.html" target="hola">
+                        <ion-icon name="briefcase" style="font-size: 26px"></ion-icon>
+                    </a>
+                </li>
+                <li>
+                    <a href="Noticias.html" target="hola">
+                        <ion-icon name="newspaper" style="font-size: 26px"></ion-icon>
+                    </a>
+                </li>
+                <li>
+                    <a href="Equipos.html" target="hola">
+                        <ion-icon name="football" style="font-size: 26px"></ion-icon>
+                    </a>
+                </li>
+                <li>
+                    <a href="Partidos.html" target="hola">
+                        <ion-icon name="calendar" style="font-size: 26px"></ion-icon>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <header class="logo-menu">
+        <div class="menu">
+            <div class="logo">
+                <img src="Imagenes/logo.jpg" class="logo" alt="">
+            </div>
+            <div class="hamburger" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <div class="nav-links" id="nav-links">
+                <a href="#ajustes">Ajustes</a>
+                <a href="InicioS.html">Iniciar sesión</a>
+            </div>
+        </div>
+        
+        <script>
+            function toggleMenu() {
+                const navLinks = document.getElementById('nav-links');
+                navLinks.classList.toggle('active');
+            }
+        </script>
+    </header>
+    <header>
+        <nav>
+            <a href="#">
+                <img src="Imagenes/logo.jpg" class="logo" alt="">
+            </a>
+            <ul class="enlaces-menu">
+                <li><a href="Index.html" target="hola">Inicio</a></li>
+                <li><a href="QuienesSomos.html" target="hola">Quienes Somos</a></li>
+                <li><a href="Noticias.html" target="hola">Noticias</a></li>
+                <li><a href="Equipos.html" target="hola">Equipos</a></li>
+                <li><a href="Partidos.html" target="hola">Partidos</a></li>
+                <li><a href="InicioS.html" target="hola">Inicio Sesion</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1 style="color: red; margin: 0; padding-top: 5px; text-align: center; font-size: 50px; font-family: Space Grotesk,sans-serif;">Noticias</h1>
+    <div class="bloquesN">
+        <div class="bloquesN1">
+            <img src="Imagenes/Manuel Koop.png" class="ImgN">
+            <div class="bloquesN2">
+                <h1 class="bloquesN3">Niño Prodigio</h1>
+            <p class="bloquesN4">
+                José Manuel Kopp, niño futbolista tachirense, 
+                formado en la Escuela de Fútbol Fundación «Pocho Echenausi» 
+                participará en la cuarta edición del Torneo Internacional de 
+                Futbol base MADCUP 2024, que se celebrará del 21 al 26 de 
+                junio de 2024 en Madrid, España.
+                El jovencito estará en este torneo base, el más grande del mundo, 
+                integrando la escuadra de la academia C10 junto otros 11 niños más 
+                de distintos estados del país, que fueron llamados a esta actividad 
+                futbolera, donde se espera la participación de unos 14 mil jugadores de 
+                800 equipos de más de 30 países, como Alemania, Canadá, Irlanda, 
+                Marruecos, Portugal, Argentina, Colombia, Francia, Italia, Estados Unidos
+                , entre otros 
+            </p> 
+            <details class="bloquesN5"> 
+                José Manuel Kopp, niño futbolista tachirense, 
+                formado en la Escuela de Fútbol Fundación «Pocho Echenausi» 
+                participará en la cuarta edición del Torneo Internacional de 
+                Futbol base MADCUP 2024, que se celebrará del 21 al 26 de 
+                junio de 2024 en Madrid, España.
+                El jovencito estará en este torneo base, el más grande del mundo, 
+                integrando la escuadra de la academia C10 junto otros 11 niños más 
+                de distintos estados del país, que fueron llamados a esta actividad 
+                futbolera, donde se espera la participación de unos 14 mil jugadores de 
+                800 equipos de más de 30 países, como Alemania, Canadá, Irlanda, 
+                Marruecos, Portugal, Argentina, Colombia, Francia, Italia, Estados Unidos
+                , entre otros 
+            </details>
+            </div>
+        </div>
+    </div>
+
+    <div class="bloquesN">
+        <div class="bloquesN1">
+            <img src="Imagenes/fotoN1.jpg" class="ImgN">
+            <div class="bloquesN2">
+                <h1 class="bloquesN3">Jugador Jean Carlo Moreno goleador del torneo copa america</h1>
+            <p class="bloquesN4">
+                El jugador Jean Carlo Moreno fue galardonado como el maximo goleador de la 
+                copa america desarrollada el 15 de mayo del 2024 hasta el 20 de mayo del 2024
+            </p>
+            <details class="bloquesN5">
+                El jugador Jean Carlo Moreno fue galardonado como el maximo goleador de la 
+                copa america desarrollada el 15 de mayo del 2024 hasta el 20 de mayo del 2024
+            </details>
+            </div>
+        </div>
+    </div>
+
+    <div class="bloquesN">
+        <div class="bloquesN1">
+            <img src="Imagenes/iutenses.jpg" class="ImgN">
+            <div class="bloquesN2">
+                <h1 class="bloquesN3">Niños del Club Iutenses piden devolucion de su cancha</h1>
+            <p class="bloquesN4">
+                Iutenses en el estado Táchira, piden al gobernador 
+                Freddy Bernal y al alcalde de San Cristóbal, Silfredo 
+                Zambrano, que actúen para que Richard Pérez, rector de la 
+                Universidad Politécnica Territorial Agroindustrial del 
+                estado Táchira (Uptaiet), les devuelva la cancha la cual 
+                les pidió desalojar hace más de un año y medio para hacerle 
+                un mejoramiento que, supuestamente, sería en un periodo de 
+                seis meses.
+                Pero los jóvenes atletas se quedaron esperando, 
+                porque el espacio deportivo fue entregado al equipo recién 
+                ascendido a la tercera división, Real Frontera Sport Club.
+            </p>
+            <details class="bloquesN5">
+                Iutenses en el estado Táchira, piden al gobernador 
+                Freddy Bernal y al alcalde de San Cristóbal, Silfredo 
+                Zambrano, que actúen para que Richard Pérez, rector de la 
+                Universidad Politécnica Territorial Agroindustrial del 
+                estado Táchira (Uptaiet), les devuelva la cancha la cual 
+                les pidió desalojar hace más de un año y medio para hacerle 
+                un mejoramiento que, supuestamente, sería en un periodo de 
+                seis meses.
+                Pero los jóvenes atletas se quedaron esperando, 
+                porque el espacio deportivo fue entregado al equipo recién 
+                ascendido a la tercera división, Real Frontera Sport Club.
+            </details>
+            </div>
+        </div>
+    </div>
+
+    <div class="bloquesN">
+        <div class="bloquesN1">
+            <img src="Imagenes/FotoN2.jpg" class="ImgN">
+            <div class="bloquesN2">
+                <h1 class="bloquesN3">Diego Pernia Jugador de la categoria sub-9 sufrio grave lesion</h1>
+            <p class="bloquesN4">
+               Jugador Diego Pernia el pasado sabado sufrio un grave lesion en el tobillo izquierdo 
+               causado durante el partido entre Elite Fc y Corazon del tachira durante el torneo copa diamante, en donde fue sacado de urgencia al
+               centro clinico para ser atencido. Hasta el momento solo se sabe que no continuara el torneo Copa diamente hasta proximo aviso
+            </p>
+            <details class="bloquesN5">
+                El jugador Jean Carlo Moreno fue galardonado como el maximo goleador de la 
+                copa america desarrollada el 15 de mayo del 2024 hasta el 20 de mayo del 2024
+            </details>
+            </div>
+        </div>
+    </div>
+
+    <div class="bloquesN">
+        <div class="bloquesN1">
+            <img src="Imagenes/IMG-20211101-WA0041.webp" class="ImgN">
+            <div class="bloquesN2">
+                <h1 class="bloquesN3">Inaugurado XXIX Torneo Estadal de fútbol en Táchira</h1>
+                <p class="bloquesN4">
+                    Más de 850 futbolistas de categorías menores se dieron 
+                    cita en la Inauguración del XXIX Torneo Estadal Anual de 
+                    la Asociación Tachirense de Fútbol (ATF), evento realizado 
+                    en las canchas de Fundarciet, mejor conocida como 
+                    Ingenieros en la capital tachirense durante la mañana del 
+                    domingo 31 de octubre, reuniendo a 37 clubes del balompié 
+                    federado.
+                    13 municipios de la región forman parte del conglomerado 
+                    de 3000 deportistas inscritos en la FVF y el sistema COMET 
+                    de la FIFA, lo que conlleva a tener el nombre de cada 
+                    jugador en la mayor instancia del fútbol mundial, desde 
+                    la categoría Sub-7 hasta la Sub-19, incluyendo el Sub-16 
+                    femenino.
+                </p>
+                <details class="bloquesN5">
+                    Más de 850 futbolistas de categorías menores se dieron 
+                    cita en la Inauguración del XXIX Torneo Estadal Anual de 
+                    la Asociación Tachirense de Fútbol (ATF), evento realizado 
+                    en las canchas de Fundarciet, mejor conocida como 
+                    Ingenieros en la capital tachirense durante la mañana del 
+                    domingo 31 de octubre, reuniendo a 37 clubes del balompié 
+                    federado.
+                    13 municipios de la región forman parte del conglomerado 
+                    de 3000 deportistas inscritos en la FVF y el sistema COMET 
+                    de la FIFA, lo que conlleva a tener el nombre de cada 
+                    jugador en la mayor instancia del fútbol mundial, desde 
+                    la categoría Sub-7 hasta la Sub-19, incluyendo el Sub-16 
+                    femenino.
+                </details>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br><br><br><br><br>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
