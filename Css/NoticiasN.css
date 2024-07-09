@@ -73,13 +73,13 @@
         margin: 5px;
         margin-left: 0;
     }
-    .ImgN{
-        width: 330px;
+.ImgN {
+        width: 93.8%;
         height: 200px;
         margin-top: 30px;
         border-radius: 10px;
-        margin-left: 20px;
-    }
+        margin-left: 10px;
+    }
     .bloquesN {
         flex-direction: column;
         align-items: center;
