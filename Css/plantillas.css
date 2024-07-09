@@ -218,14 +218,15 @@
         justify-content: left;
         background-color:  rgba(255, 255, 255, 0.8);
         border-radius: 10px;
-        width: 330px;
+        width: 389px;
         margin: 1px 1px;
         margin-bottom: 10px;
     }
-             .header2 img{
-                        width: 40px;
-                        margin-right: 5px;
-             }
+    .header2 img{
+        width: 100px;
+        margin-left: 5px;
+        margin-right: 2px;
+    }
     table{
         width: 20px;
         height: auto;
