@@ -254,4 +254,7 @@
         margin-bottom: 10px;
         display: none;
     }
+    .activo{
+        display: none;
+    }
 }
