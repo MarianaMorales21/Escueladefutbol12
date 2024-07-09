@@ -1,0 +1,112 @@
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        margin-bottom: 0px;
+    }
+    nav ul {
+        flex-direction: row;
+        gap: 10px;
+    }
+    nav ul li a {
+        font-size: 2em;
+    }
+    h1 {
+        font-size: 2.5rem;
+        font-family: "Space Grotesk", sans-serif;
+    }
+    .letra {
+        font-size: 1.4rem;
+    }
+    .letra1 {
+        font-size: 1.4rem;
+    }
+    .ImgP3 {
+        /*flex: 1 1 100%;*/
+        flex-direction: row;
+    }
+}
+.bloquesN{
+    width: 97.5%;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 15px;
+    margin: 10px;
+}
+.bloquesN1{
+    display: flex; 
+    align-items: flex-start;
+}
+.bloquesN2{
+    flex: 1;
+}
+.bloquesN3{
+    color: red; 
+    margin: 0; 
+    padding-top: 5px; 
+    text-align: left; 
+    font-size: 30px;
+    font-family: Space Grotesk,sans-serif;
+}
+.bloquesN4{
+    font-size: 20px;
+    padding: 10px; 
+    text-align: justify;
+    font-family: Space Grotesk,sans-serif;
+}
+.bloquesN5{
+    font-size: 20px;
+    padding: 10px;
+    display: none; 
+}
+.ImgN{
+    height: 180px; 
+    width: 300px;
+    border-radius: 10px;
+    margin: 20px;
+}
+@media (max-width: 768px) {
+    .letra,.letra1 {
+        font-size: 16px;
+        text-align: center;
+        margin: 5px;
+        margin-left: 0;
+    }
+    .ImgN{
+        width: 330px;
+        height: 200px;
+        margin-top: 30px;
+        border-radius: 10px;
+        margin-left: 20px;
+    }
+    .bloquesN {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    .bloquesN1 {
+        display: grid; 
+        align-items: center;
+    }
+    .bloquesN2{
+        flex: content;
+    }
+    .bloquesN3{
+        color: red; 
+        margin: 0; 
+        padding-top: 5px; 
+        text-align: center; 
+        font-size: 30px;
+        font-family: Space Grotesk,sans-serif;
+    }
+    .bloquesN4{
+        display: none;
+    }
+    .bloquesN5{
+        font-size: 20px;
+        padding: 10px;
+        display: grid;
+        text-align: justify;
+    }
+}

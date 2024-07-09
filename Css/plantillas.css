@@ -1,0 +1,310 @@
+            .contenedor2 {
+                text-align: center;
+                display: flex;
+                height: auto;
+                width: 100%;
+                justify-content: space-around;
+            }
+            
+            .derecha {
+                background-color: transparent;
+                margin: 5px;
+            }
+            table{
+                width: 700px;
+                height: 300px;
+                border-collapse: collapse;
+                margin-right: 10px;
+            }
+            th, td {
+                border: 1px solid #000000;
+                padding: 10px;
+                text-align: center;
+                width: 200px;
+                height: auto;
+                font-size: 20px;
+                background-color: rgb(210, 218, 241);
+            }
+            th {
+                background-color: #0011ff;
+                color: white;
+            }
+            .header2 {
+                display: flex;
+                justify-content: left;
+                background-color:  rgba(255, 255, 255, 0.8);
+                border-radius: 10px;
+                width: 500px;
+                margin: 10px;
+            }
+        
+            .header2 h1 {
+                font-size: 40px;
+                font-family: cursive;
+                font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+                text-align: center;
+            }
+            
+            .header2 img {
+                width: 100px;
+                height: 100px;
+                margin: 20px;
+                border-radius: 20px;
+            }
+            
+            .soccer-field {
+                width: 500px;
+                height: 250px;
+                background-color: green;
+                position: relative;
+            }
+            
+            .field-outline {
+                width: 100%;
+                height: 100%;
+                border: 1px solid white;
+            }
+            
+            .center-circle {
+                width: 70px;
+                height: 70px;
+                border: 2px solid white;
+                border-radius: 50%;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            
+            .penalty-area {
+                width: 100px;
+                height: 140px;
+                border: 2px solid white;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            
+            .penalty-area2 {
+                width: 100px;
+                height: 140px;
+                border: 2px solid white;
+                position: absolute;
+                top: 21%;
+                transform: translateX(381%);
+            }
+            
+            .penalty-area::before {
+                content: "";
+                width: 10px;
+                height: 10px;
+                background-color: white;
+                position: absolute;
+                top: 50%;
+                left: 45px;
+                transform: translateY(-50%);
+                border-radius: 50%;
+            }
+            
+            .penalty-area2::before {
+                content: "";
+                width: 10px;
+                height: 10px;
+                background-color: white;
+                position: absolute;
+                top: 43%;
+                right: 45px;
+                transform: translateY(50%);
+                border-radius: 50%;
+            }
+            
+            .halfway-line {
+                width: 2px;
+                height: 100%;
+                background-color: white;
+                position: absolute;
+                top: 0;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            
+            .player {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+            }
+            
+            .number {
+                font-size: 24px;
+                font-weight: bold;
+                color: white;
+                text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+                position: absolute;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                background-color: rgba(0, 0, 0, 0.5);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            .number1 {
+                top: 42%;
+                left: 2%
+            }
+            
+            .number2 {
+                top: 80%;
+                left: 30%
+            }
+            
+            .number3 {
+                bottom: 80%;
+                left: 30%
+            }
+            
+            .number4 {
+                top: 54%;
+                left: 22%
+            }
+            
+            .number5 {
+                top: 29%;
+                left: 22%
+            }
+            
+            .number6 {
+                top: 42%;
+                left: 38.5%
+            }
+            
+            .number7 {
+                top: 75%;
+                left: 71%
+            }
+            
+            .number8 {
+                top: 20%;
+                left: 55%
+            }
+            
+            .number9 {
+                top: 42%;
+                left: 80%
+            }
+            
+            .number10 {
+                top: 63%;
+                left: 55%
+            }
+            
+            .number11 {
+                top: 5%;
+                left: 71%
+            }
+
+ @media (max-width: 768px) {
+    .contenedor2 {
+        text-align: center;
+        height: auto;
+        width: 100%;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+    .header2 {
+        display: flex;
+        justify-content: left;
+        background-color:  rgba(255, 255, 255, 0.8);
+        border-radius: 10px;
+        width: 400px;
+        margin: 1px 1px;
+        margin-bottom: 10px;
+    }
+    table{
+        width: 20px;
+        height: auto;
+        border-collapse: collapse;
+        margin-left:-11px;
+    }
+    th, td {
+        border: 1px solid #000000;
+        padding: 10px;
+        text-align: center;
+        width: 5px;
+        height: auto;
+        font-size: 20px;
+        background-color: rgb(210, 218, 241);
+    }
+    th{
+        background-color: #0011ff;
+        color: white;
+        width: 10px;
+    }
+    .soccer-field{
+        height: 50vh;
+        width: 96vw;
+        margin-left: -5px;
+        margin-bottom: 10px;
+    }
+    .number1 {
+        top: 14%;
+        left: 5%
+    }
+    
+    .number2 {
+        top: 57%;
+        left: 28%
+    }
+    
+    .number3 {
+        bottom: 120%;
+        left: 28%
+    }
+    
+    .number4 {
+        top: 30%;
+        left: 18%
+    }
+    
+    .number5 {
+        top: 1%;
+        left: 18%
+    }
+    
+    .number6 {
+        top: 15%;
+        left: 35%
+    }
+    
+    .number7 {
+        top: 45%;
+        left: 65%
+    }
+    
+    .number8 {
+        top: -15%;
+        left: 45%
+    }
+    
+    .number9 {
+        top: 15%;
+        left: 75%
+    }
+    
+    .number10 {
+        top: 40%;
+        left: 45%
+    }
+    
+    .number11 {
+        top: -20%;
+        left: 65%
+    }
+    .penalty-area2{
+        width: 100px;
+        height: 140px;
+        position: relative;
+        transform: translateX(280%) translateY(44%);
+    }
+}

@@ -1,0 +1,176 @@
+.open-button1 {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  font-size: 30px;
+  background-color: transparent;
+  border: none;
+  color: black;
+  cursor: pointer;
+  padding: 20px;
+}
+.open-button {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  font-size: 30px;
+  background-color: transparent;
+  border: none;
+  color: black;
+  cursor: pointer;
+  padding: 20px;
+}
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgb(255, 255, 255);
+  overflow-x: hidden;
+  padding-top: 15px;
+  transition: 0.5s;
+}
+
+.sidebar a {
+  padding: 10px;
+  text-decoration: none;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #000000;
+  background-color: rgb(255, 0, 0);
+}
+
+#menu-toggle {
+  display: none;
+}
+
+#menu-toggle:checked + .sidebar {
+  width: 180px;
+}
+.titulo{
+  padding: 25px;
+  color: black;
+  align-items: center;
+  text-align: center;
+  font-size: 30px;
+}
+.contenedor{
+  flex: 1;
+  padding: 20px;
+  background-color: transparent;
+  margin-left: 0px;
+  height: auto;
+  margin: 20px;
+  border-radius: 10px;
+}
+.contenedor2{
+  flex: 1;
+  padding: 20px;
+  background-color: rgb(255, 255, 255);
+  margin-left: 0px;
+  height: auto;
+  margin: 20px;
+  border-radius: 10px;
+}
+.bloques{
+  width: 300px;
+  height: 300px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 15px;
+  margin: 20px;
+  padding: 10px;
+  border: 2px solid black;
+}
+.bloques header{
+  width: auto;
+  height: 20px;
+  background-color: rgb(255, 255, 255);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  text-align: center;
+  font-size: 35px;
+  color: #000000;
+
+}
+.bloques div{
+  margin: 20px;
+  background-color: rgb(255, 255, 255);
+  width: auto;
+  height: 220px;
+  border-radius: 15px;
+  margin: 20px;
+  padding: 10px;
+}
+
+.bloquesP{
+width: 350px;
+height: 400px;
+background-color: rgb(255, 255, 255);
+border-radius: 15px;
+margin: 20px;
+border: 2px solid rgb(10, 10, 10);
+margin: 10px;
+padding: 10px;
+}
+
+.boton{
+width: 100%;
+background: rgb(182, 29, 29);
+border: none;
+padding: 12px;
+color: white;
+margin: 16px 0;
+font-size: 16px;
+border: 2px solid rgb(10, 10, 10);
+border-radius: 10px;
+cursor: pointer;
+
+}
+.bloqueCP{
+width: 600px;
+height: 500px;
+border: 2px solid rgb(10, 10, 10);
+background-color: rgb(255, 255, 255);
+border-radius: 15px;
+margin: 20px;
+padding: 10px;
+}
+.contForma{
+width: auto;
+height: 460px;
+background-color: rgb(255, 255, 255);
+border-radius: 15px;
+margin: 10px;
+padding: 10px;
+}
+.control{
+width: 300px;
+height: 30px;
+background-color: rgb(155, 152, 153);
+border-radius: 5px;
+border: 1px solid rgb(10, 10, 10);
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-size: 20px;
+margin-bottom: 15px;
+}
+.chek{
+width: 15px;
+height: 15px;
+padding: 10px;
+margin-bottom: 15px;
+}
+/*
+.bloquesN{
+  width: 97.5%;
+  height: 200px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 15px;
+  margin: 20px;
+}
+  */
