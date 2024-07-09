@@ -252,65 +252,6 @@
         width: 96vw;
         margin-left: -5px;
         margin-bottom: 10px;
-    }
-    .number1 {
-        top: 14%;
-        left: 5%
-    }
-    
-    .number2 {
-        top: 57%;
-        left: 28%
-    }
-    
-    .number3 {
-        bottom: 120%;
-        left: 28%
-    }
-    
-    .number4 {
-        top: 30%;
-        left: 18%
-    }
-    
-    .number5 {
-        top: 1%;
-        left: 18%
-    }
-    
-    .number6 {
-        top: 15%;
-        left: 35%
-    }
-    
-    .number7 {
-        top: 45%;
-        left: 65%
-    }
-    
-    .number8 {
-        top: -15%;
-        left: 45%
-    }
-    
-    .number9 {
-        top: 15%;
-        left: 75%
-    }
-    
-    .number10 {
-        top: 40%;
-        left: 45%
-    }
-    
-    .number11 {
-        top: -20%;
-        left: 65%
-    }
-    .penalty-area2{
-        width: 100px;
-        height: 140px;
-        position: relative;
-        transform: translateX(280%) translateY(44%);
+        display: none;
     }
 }
